@@ -4,10 +4,513 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 		<title>Vite App</title>
 	</head>
 	<body>
-		<h1>Hello world!</h1>
+		<nav class="menu">
+			<img class="menu__logo" src="/vite.svg" alt="Logo" />
+			<ul class="menu__list">
+				<li class="menu__list-item"><a href="#">О нас</a></li>
+				<li class="menu__list-item"><a href="#">Команда</a></li>
+				<li class="menu__list-item"><a href="#">Услуги</a></li>
+				<li class="menu__list-item"><a href="#">Помощь</a></li>
+				<li class="menu__list-item"><a href="#">Контакты</a></li>
+			</ul>
+			<div class="menu__contacts">
+				<a class="menu__contacts-phone" href="tel:+79587123673">+7 (958) 712-36-73</a>
+				<div class="menu-wrapper">
+					<a class="menu__contacts-link" href="/contact">Contact Us</a>
+					<a class="menu__contacts-link" href="/about">About Us</a>
+				</div>
+			</div>
+		</nav>
+		<header class="header">
+			<div class="container">
+				<div class="header-wrapper">
+					<div class="header-text">
+						<div class="header-text__title">Лечение грыжи позвоночника без боли и операции</div>
+						<div class="header-text__description">Игнорирование боли в спине может привести к её хронизации. Чем дольше вы откладываете визит, тем сложнее и дороже станет лечение.</div>
+						<button class="button-default header-button">Записаться ОНЛАЙН</button>
+					</div>
+					<div class="header-image">
+						<img src="" alt="">
+						<div class="header-image__wrapper">
+							<div class="header-image__wrapper-item">Юлия Девяткина, Глав врач <br> Клиника на м.Новокузнецкая</div>
+							<div class="header-image__wrapper-item">Евдокимов Антон, Глав врач <br> Клиника на м.Фонвизинская</div>
+						</div>
+					</div>
+				</div>
+				<ul class="advantages">
+					<li class="advantages__item">
+						<div class="advantages__item-title"></div>
+						<div class="advantages__item-subtitle">57K пациентов <br> вылечены</div>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__item-title">15+</div>
+						<div class="advantages__item-subtitle">лет экспертизы <br> в лечении</div>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__item-title">94%</div>
+						<div class="advantages__item-subtitle">избавляем от грыжи <br> без операции</div>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__item-title">88%</div>
+						<div class="advantages__item-subtitle">рекомендуют нас <br> близким</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<section class="rating">
+			<div class="container">
+				<div class="title-default">Честный рейтинг на независимых площадках</div>
+				<div class="rating-places">
+					<img src="" alt="" class="rating-places__item">
+					<img src="" alt="" class="rating-places__item">
+					<img src="" alt="" class="rating-places__item">
+				</div>
+				<ul class="advantages">
+					<li class="advantages__item">Сэкономим время за счет своего современного оборудования</li>
+					<li class="advantages__item">Избавим от болиза 3 недели лечения (12 сеансов)</li>
+					<li class="advantages__item">Опыт в лечении с применением 10+ различных методов</li>
+					<li class="advantages__item">Честные ответы на понятном языке, выдаем план лечения</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="help">
+			<div class="container">
+				<div class="title-default">Как мы можем вам помочь</div>
+				<div class="subtitle-default">Мы не будем утомлять перечислением диагнозов и пугать последствиями. <br> Обратившись к нам, вы:</div>
+				<ul class="help-list">
+					<li class="help-list__item">
+						<div class="help-list__item-tile">
+							<img src="" alt="">
+							<span class="title">Вернете активность в свою жизнь</span>
+						</div>
+						<div class="help-list__item-description">Забудете о том, что «больно даже надеть кроссовки» и снова сможете заниматься спортом.</div>
+					</li>
+					<li class="help-list__item">
+						<div class="help-list__item-tile">
+							<img src="" alt="">
+							<span class="title">Перестанете бояться простых движений</span>
+						</div>
+						<div class="help-list__item-description">Сможете наклониться, поднять сумку, повернуться без страха и боли.</div>
+					</li>
+					<li class="help-list__item">
+						<div class="help-list__item-tile">
+							<img src="" alt="">
+							<span class="title">Сможете работать без ограничений</span>
+						</div>
+						<div class="help-list__item-description">Боль больше не будет диктовать темп ни офисной, ни физической работы.</div>
+					</li>
+					<li class="help-list__item">
+						<div class="help-list__item-tile">
+							<img src="" alt="">
+							<span class="title">Почувствуете лёгкость в теле</span>
+						</div>
+						<div class="help-list__item-description">Уйдёт напряжение и спазмы, которые мешали отдыху и полноценному сну</div>
+					</li>
+					<li class="help-list__item">
+						<div class="help-list__item-tile">
+							<img src="" alt="">
+							<span class="title">Будете жить как вам хочется</span>
+						</div>
+						<div class="help-list__item-description">Поездки, хобби, досуг перестанут зависеть от болей в спине.</div>
+					</li>
+					<li class="help-list__item">
+						<div class="help-list__item-tile">
+							<img src="" alt="">
+							<span class="title">Вернете простые радости</span>
+						</div>
+						<div class="help-list__item-description">Веселиться и играть в активные игры с детьми и внуками</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="companies">
+			<div class="container">
+				<div class="title-default">Здоровье своих сотрудников нам доверяют</div>
+				<img src="" alt="" class="companies-image">
+			</div>
+		</section>
+		<section class="promo">
+			<div class="container">
+				<div class="promo__wrapper">
+					<img src="" alt="" class="promo__image">
+					<div class="promo__content">
+						<div class="promo-title">«Встреть сентябрь без боли!» успей получить бонус в TEMED</div>
+						<div class="promo-subtitle">0 000 ₽ на курсовое лечение после первичного приёма. Срок действия бонуса до 30 сентября 2025 года.</div>
+						<div class="promo-contacts">
+							<button class="button-default">Узнать подробнее</button>
+							<a href="">+7 (958) 712-36-73</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="doctors">
+			<div class="container">
+				<div class="title-default">Наши врачи специализируются на лечении боли в спине</div>
+				<div class="doctors-buttons">
+					<button class="doctors-buttons__item"></button>
+					<button class="doctors-buttons__item"></button>
+					<button class="doctors-buttons__item"></button>
+					<button class="doctors-buttons__item"></button>
+					<button class="doctors-buttons__item"></button>
+					<button class="doctors-buttons__item"></button>
+				</div>
+				<div class="doctors-list">
+					<div class="spllitted-card doctors-list__item">
+						<div class="splitted-card__text_first"></div>
+						<img src="" alt="" class="splitted-card__image doctors-list__item-image">
+						<div class="splitted-card__text_second">
+							<span class="doctors-list__item-address"></span>
+							<span class="doctors-list__item-name"></span>
+							<span class="doctors-list__item-position"></span>
+						</div>
+						
+					</div>
+					<div class="spllitted-card doctors-list__item">
+						<div class="splitted-card__text_first"></div>
+						<img src="" alt="" class="splitted-card__image doctors-list__item-image">
+						<div class="splitted-card__text_second">
+							<span class="doctors-list__item-address"></span>
+							<span class="doctors-list__item-name"></span>
+							<span class="doctors-list__item-position"></span>
+						</div>
+						
+					</div>
+					<div class="spllitted-card doctors-list__item">
+						<div class="splitted-card__text_first"></div>
+						<img src="" alt="" class="splitted-card__image doctors-list__item-image">
+						<div class="splitted-card__text_second">
+							<span class="doctors-list__item-address"></span>
+							<span class="doctors-list__item-name"></span>
+							<span class="doctors-list__item-position"></span>
+						</div>
+						
+					</div>
+					<div class="spllitted-card doctors-list__item">
+						<div class="splitted-card__text_first"></div>
+						<img src="" alt="" class="splitted-card__image doctors-list__item-image">
+						<div class="splitted-card__text_second">
+							<span class="doctors-list__item-address"></span>
+							<span class="doctors-list__item-name"></span>
+							<span class="doctors-list__item-position"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="prices">
+			<div class="container">
+				<div class="title-default">Прозрачное ценообразование без скрытых платежей</div>
+				<div class="prices__wrapper">
+					<div class="prices-item">
+						<img src="" alt="" class="prices-item__image">
+						<div class="prices-item__title">Первичная консультация</div>
+						<div class="prices-item__subtitle">60 минут с анализом МРТ</div>
+						<div class="prices-item__price">от 3 000 р</div>
+						<ul class="prices-item__services">
+							<li class="prices-item__services-item">Детальная диагностика</li>
+							<li class="prices-item__services-item">Анализ МРТ снимков</li>
+							<li class="prices-item__services-item">План лечения</li>
+							<li class="prices-item__services-item">Прогноз восстановления</li>
+						</ul>
+						<button class="button-default">Записаться ОНЛАЙН</button>
+					</div>
+					<div class="prices-item">
+						<img src="" alt="" class="prices-item__image">
+						<div class="prices-item__title">Курс лечения</div>
+						<div class="prices-item__subtitle">12 сеансов комплексной терапии</div>
+						<div class="prices-item__price">от 42 000 р</div>
+						<ul class="prices-item__services">
+							<li class="prices-item__services-item">Ударно-волновая терапия</li>
+							<li class="prices-item__services-item">Лазерная терапия</li>
+							<li class="prices-item__services-item">Медицинский массаж</li>
+							<li class="prices-item__services-item">Контроль врача</li>
+						</ul>
+						<button class="button-invert">Узнать подробнее</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reception">
+			<div class="container">
+				<div class="title-default">Как проходят 60 минут первичного приема</div>
+				<div class="reception__wrapper">
+					<div class="reception-item">
+						<div class="reception-item__image">
+							<img src="" alt="" class="reception-item__photo">
+							<img src="" alt="" class="reception-item__period">
+						</div>
+						<div class="reception-item__title">Беседа с врачом, анализ жалоб, сбор анамнеза</div>
+						<div class="reception-item__description">Выясняем историю болезни, характер боли, что влияет на симптомы, сопутствующие проблемы</div>
+					</div>
+					<div class="reception-item">
+						<div class="reception-item__image">
+							<img src="" alt="" class="reception-item__photo">
+							<img src="" alt="" class="reception-item__period">
+						</div>
+						<div class="reception-item__title">Изучение и подробный разбор вашего МРТ</div>
+						<div class="reception-item__description">Врач лично анализирует снимки, объясняет что видит, показывает где именно проблема</div>
+					</div>
+					<div class="reception-item">
+						<div class="reception-item__image">
+							<img src="" alt="" class="reception-item__photo">
+							<img src="" alt="" class="reception-item__period">
+						</div>
+						<div class="reception-item__title">Мануально-мышечное тестирование</div>
+						<div class="reception-item__description">Мануальное тестирование - это осмотр, проверка рефлексов, силы мышц, чувствительности</div>
+					</div>
+					<div class="reception-item">
+						<div class="reception-item__image">
+							<img src="" alt="" class="reception-item__photo">
+							<img src="" alt="" class="reception-item__period">
+						</div>
+						<div class="reception-item__title">Составление плана лечения, пояснение диагноза</div>
+						<div class="reception-item__description">Составление индивидуального плана, объяснение методов, составление прогнозов, ответы на вопросы</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="benefits">
+			<div class="container">
+				<div class="benefits__wrapper">
+					<div class="benefits-title">Всего за 60 минут полноценной работы с врачом вы получите:</div>
+					<div class="benefits-items">
+						<div class="benefits-items__item">
+							<img src="" alt="" class="benefits-item__image">
+							<div class="benefits-item__title">Понимание</div>
+							<ul class="benefits-item__list">
+								<li class="benefits-item__list-item">✅Вы точно знаете что с вами и насколько это серьёзно</li>
+								<li class="benefits-item__list-item">✅Способы избежать операции</li>
+								<li class="benefits-item__list-item">✅Прогноз выздоровления</li>
+							</ul>
+						</div>
+						<div class="benefits-items__item">
+							<img src="" alt="" class="benefits-item__image">
+							<div class="benefits-item__title">План действий</div>
+							<ul class="benefits-item__list">
+								<li class="benefits-item__list-item">✅Пошаговый план - четкий путь лечения без операции</li>
+								<li class="benefits-item__list-item">✅Можете сразу начать лечиться</li>
+								<li class="benefits-item__list-item">✅Рекомендации по образу жизни</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mri">
+			<div class="container">
+				<div class="title-default">Чтобы обойтись без лишних трат - на первичный прием лучше прийти с МРТ</div>
+				<div class="mri__wrapper">
+					<div class="mri-image-info">
+						<img src="" alt="">
+
+					</div>
+					<div class="mri-information">
+						<div class="mri-information__title">Что делать, если нет МРТ?</div>
+						<div class="mri-information__description">Наши партнеры, быстро и качественно сделают МРТ со скидкой от 10% по специальному купону TEMED</div>
+						<button class="button-invert">Получить купон</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="promo">
+			<div class="container">
+				<div class="promo__wrapper">
+					<img src="" alt="" class="promo__image">
+					<div class="promo__content">
+						<div class="promo-title">Выделите 60 минут на первичный прием</div>
+						<div class="promo-contacts">
+							<button class="button-default">Записаться ОНЛАЙН</button>
+							<a href="">+7 (958) 712-36-73</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq">
+			<div class="container">
+				<div class="title-default">Частые сомнения пациентов</div>
+				<div class="accordion-list">
+					<div class="accordion-list__item">
+						<div class="accordion-header">
+							<div class="arrow">+</div>
+							<div class="question">А вдруг это не поможет?</div>
+						</div>
+						<div class="answer">
+							<strong>ФАКТ:</strong>
+							за 10 лет работы более 94% пациентов избежали операции. У нас есть конкретная статистика и методика, которая работает.
+						</div>
+					</div>
+					<div class="accordion-list__item">
+						<div class="accordion-header">
+							<div class="arrow">+</div>
+							<div class="question">Наверное, безоперационное лечение позвоночника - это очень дорого?</div>
+						</div>
+						<div class="answer">
+							<strong>СРАВНИТЕ:</strong>
+							стоимость операции вместе с периодом реабилитации составляет в среднем от 150 000 руб. Первичная консультация стоит около 3 000 руб., а полный курс лечения в среднем обходится в 42 000 руб. Даже полный курс лечения будет дешевле одной операции.
+						</div>
+					</div>
+					<div class="accordion-list__item">
+						<div class="accordion-header">
+							<div class="arrow">+</div>
+							<div class="question">Боюсь потерять время и не получить результат, может лучше сразу обратиться к хирургу?</div>
+						</div>
+						<div class="answer">
+							<strong>ПОДУМАЙТЕ:</strong>
+							потратить 1 час на консультацию ИЛИ месяцы восстановления после операции и риск осложнений. Где вы можете потерять больше?
+						</div>
+					</div>
+					<div class="accordion-list__item">
+						<div class="accordion-header">
+							<div class="arrow">+</div>
+							<div class="question">У меня уже большая грыжа, запущенный случай, мне наверное уже поздно?</div>
+						</div>
+						<div class="answer">
+							<strong>НЕ ПРАВДА:</strong>
+							у нас есть успешные случаи лечения грыж до 15 мм. Размер - не приговор, важен индивидуальный подход!
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="steps">
+			<div class="container">
+				<div class="title-default">Уже сейчас вы можете сами сделать 2 простых шага, которые помогут вам пережить боль:</div>
+				<div class="steps__wrapper">
+					<div class="spllitted-card steps__item">
+						<div class="splitted-card__text_first">Скачайте бесплатный чек-лист "Первая помощь спине"</div>
+						<img src="" alt="" class="splitted-card__image steps__item-image">
+						<div class="splitted-card__text_second">
+							<span class="steps__item-name">Советы от Фещенко Алексея, заместителя медицинского директора Клиники ТЕМЕD</span>
+							<button class="button-invert">Скачать чек-лист</button>
+						</div>
+					</div>
+					<div class="spllitted-card steps__item">
+						<div class="splitted-card__text_first">Посмотрите подборку видео с упражнениями</div>
+						<img src="" alt="" class="splitted-card__image steps__item-image">
+						<div class="splitted-card__text_second">
+							<span class="steps__item-name">Рекомендации от Романа Алексеевича, опытного реабилитолога Клиники TEMED</span>
+							<button class="button-invert">Смотреть видео</button>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</section>
+		
+		<section class="symptoms">
+			<div class="container">
+				<div class="title-default">Эти действия точно не навредят и смогут помочь вам избавиться от таких симптомов как:</div>
+				<div class="symptoms__wrapper">
+					<div class="symptoms-item">Ноющая боль</div>
+					<div class="symptoms-item">Колющая боль</div>
+					<div class="symptoms-item">Жжение</div>
+					<div class="symptoms-item">Прострелы</div>
+					<div class="symptoms-item">Ограничения в движениях</div>
+					<div class="symptoms-item">Онемение</div>
+					<div class="symptoms-item">Ощущение мурашек</div>
+					<div class="symptoms-item">Напряжение</div>
+					<div class="symptoms-item">Болезненность мышц</div>
+					<div class="symptoms-item">Слабость</div>
+					<div class="symptoms-item">Отек</div>
+					<div class="symptoms-item">Покраснение</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="promo">
+			<div class="container">
+				<div class="promo__wrapper">
+					<img src="" alt="" class="promo__image">
+					<div class="promo__content">
+						<div class="promo-title">Обратитесь в одну из клиник Temed</div>
+						<div class="promo-contacts">
+							<button class="button-default">Записаться ОНЛАЙН</button>
+							<a href="">+7 (958) 712-36-73</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer-item">
+						<div class="footer-item__city">Москва</div>
+						<div class="footer-item__address">м. Фонвизинская <br> ул. Большая Марфинская 1к4</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-ПТ с 8:00 до 20:00 <br> СБ-ВС с 8:00 до 18:00 <br> Перерыв 14:00-15:00</div>
+					</div>
+					<div class="footer-item">
+						<div class="footer-item__city">Москва</div>
+						<div class="footer-item__address">м. Технопарк <br> Проектируемый проезд 4062-й д.6 стр.16. БЦ "Порт Плаза"</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-ВС с 8:00 до 20:00 <br> Перерыв 14:00-15:00</div>
+					</div>
+					<div class="footer-item">
+						<div class="footer-item__city">Москва</div>
+						<div class="footer-item__address">м. Новокузнецкая <br> Большой Овчинниковский пер., 16, 6эт, ТЦ Аркадия</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-ВС с 8:00 до 20:00 <br> Перерыв 14:00-15:00</div>
+					</div>
+					<div class="footer-item">
+						<div class="footer-item__city">Санкт-Петербург</div>
+						<div class="footer-item__address">м. Пионерская <br> Коломяжский проспект, 15 к1</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-ВС с 8:00 до 20:00 <br> Перерыв 14:00-15:00</div>
+					</div>
+					<div class="footer-item">
+						<div class="footer-item__city">Санкт-Петербург</div>
+						<div class="footer-item__address">м. Невский проспект <br> Шведский пер. 2, подъезд 2, этаж 2</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-СБ с 8:00 до 20:00 <br> ВС с 9:00 до 20:00 <br> Перерыв с 14:00-15:00</div>
+					</div>
+					<div class="footer-item">
+						<div class="footer-item__city">Краснодар</div>
+						<div class="footer-item__address">ул. Северная, 476</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-ВС с 8:00 до 20:00 <br> Перерыв 14:00-15:00</div>
+					</div>
+					<div class="footer-item">
+						<div class="footer-item__city">Казань</div>
+						<div class="footer-item__address">ул. Право-Булачная, 37</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-СБ с 8:00 до 20:00 <br> ВС выходной <br> Перерыв 14:00-15:00</div>
+					</div>
+					<div class="footer-item">
+						<div class="footer-item__city">Екатеринбург</div>
+						<div class="footer-item__address">ул. Сурикова, 4</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-ПТ с 8:00 до 18:00 <br> СБ-ВС выходные <br> Перерыв 14:00-15:00</div>
+					</div>
+					<div class="footer-item">
+						<div class="footer-item__city">Уфа</div>
+						<div class="footer-item__address">ул. Революционная, 41</div>
+						<a href="" class="footer-item__phone">+7 (958) 712-36-73</a>
+						<div class="footer-item__schedule">ПН-ВС с 8:00 до 19:00 <br> Перерыв 14:00-15:00</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 		<script type="module" src="/src/main.js"></script>
 	</body>
 </html>
