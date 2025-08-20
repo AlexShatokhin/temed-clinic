@@ -1,0 +1,42 @@
+@use "../base/colors.scss" as *;
+
+.help{
+    .subtitle-default{
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;
+        color: $grey;
+        margin-bottom: 60px;
+    }
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 40px;
+        &__item{
+            width: 360px;
+            height: 190px;
+            border-radius: 10px;
+            background-color: #fafafa;
+            padding: 30px 20px;
+            list-style-type: none;
+            color: $grey;
+            font-weight: 300;
+            &-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 7px;
+                margin-bottom: 10px;
+                img{
+                    width: 60px;
+                }
+                .title{
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-weight: 500;
+                }                
+            }
+        }
+    }
+}

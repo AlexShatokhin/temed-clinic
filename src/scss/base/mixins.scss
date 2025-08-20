@@ -1,0 +1,25 @@
+@use "../base/colors.scss" as *;
+
+.button-default {
+    width: 280px;
+    height: 60px;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@mixin gradient-background {
+    background: linear-gradient(to right, #e9effa, #e9effa, #dce7fd, #dce7fd);
+}
+
+
+.title-default {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: $blue;
+}
