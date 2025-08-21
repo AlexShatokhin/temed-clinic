@@ -2,7 +2,7 @@
 @use "../base/mixins.scss" as *;
 
 .benefits{
-    height: 450px;
+    margin-top: 70px;
     &__wrapper{
         padding: 40px;
         border-radius: 10px;
@@ -17,7 +17,8 @@
     }
     &-items{
         display: flex;
-        justify-content: space-between;
+        column-gap: 40px;
+        justify-content: center;
         &__item{
             width: 500px;
             height: 260px;
