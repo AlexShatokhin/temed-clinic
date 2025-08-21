@@ -9,6 +9,7 @@
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .button-invert{
@@ -18,12 +19,13 @@
     color: $blue;
     border-radius: 10px;
     border: none;
-    font-size: 20px;
+    font-size: 21px;
     cursor: pointer;
+    font-weight: 500;    
 }
 
 @mixin gradient-background {
-    background: linear-gradient(to right, #e9effa, #e9effa, #dce7fd, #dce7fd);
+    background: linear-gradient(0.833turn, rgba(235, 240, 252, 1) 0%, rgba(227, 236, 253, 1) 25%, rgba(220, 229, 253, 1) 51%, rgba(219, 235, 250, 1) 76%, rgba(234, 239, 250, 1) 100%);
 }
 
 

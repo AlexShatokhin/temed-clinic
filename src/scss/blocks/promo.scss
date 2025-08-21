@@ -19,6 +19,9 @@
         &_reception{
             row-gap: 40px;
         }
+        &_footer{
+            row-gap: 50px;
+        }
     }
     &-title{
         font-size: 54px;
@@ -47,6 +50,9 @@
             line-height: 25px;
             font-weight: 500;
         }
+    }
+    &-footer{
+        font-size: 65px;
     }
 }
 

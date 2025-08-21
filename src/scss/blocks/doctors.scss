@@ -1,3 +1,5 @@
+@use "../base/colors.scss" as *;
+
 .doctors{
     &-buttons {
         display: flex;
@@ -11,21 +13,21 @@
             font-weight: 500;
             border-radius: 10px;
             background-color: transparent;
-            border: 1px solid #d1d1d1;
+            border: 2px solid #fafafa;
             cursor: pointer;
-            color: #333;
+            color: $black;
             transition: .3s all;
             &:hover {
-                color: blue;
+                color: $blue;
             }
             &_active{
-                background-color: #d1d1d1;
+                background-color: #fafafa;
                 font-weight: 700;
-                color: blue;
+                color: $blue;
             }
         }
     }
-    .main{
+    .main-post{
         color: orange;
     }
     &-list{
@@ -34,6 +36,8 @@
         justify-content: center;
         margin-top: 50px;
         &__item{
+            width: 260px;
+            height: 420px;
             &-name{
                 display: block;
                 font-size: 25px;

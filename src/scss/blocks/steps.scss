@@ -1,0 +1,42 @@
+@use "../base/colors.scss" as *;
+
+.steps {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item{
+		width: 560px;
+		height: 430px;
+		&-title{
+			text-align: center;
+			padding-top: 30px;
+			font-size: 25px;
+			line-height: 31px;
+			color: $grey;
+			font-weight: 500;
+		}
+		&-name{
+			display: block;
+			width: 440px;
+			font-size: 16px;
+			line-height: 24px;
+			color: $grey;
+			font-weight: 500;
+			margin: 10px auto;
+		}
+		button {
+			margin-top: 20px;
+		}
+	}
+	.splitted-card{
+		&__text{
+			&_first{
+				height: 160px;
+			}
+		}
+		&__image{
+			top: 110px;
+		}
+	}
+}

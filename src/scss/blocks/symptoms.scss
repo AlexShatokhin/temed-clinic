@@ -1,0 +1,21 @@
+@use "../base/colors.scss" as *;
+
+.symptoms {
+    margin-bottom: 80px;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+    }
+    &-item{
+        font-size: 16px;
+        color: $blue;
+        font-weight: 500;
+        border-radius: 10px;
+        background-color: #fafafa;
+        padding: 14px 20px;
+        cursor: pointer;
+    }
+}

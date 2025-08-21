@@ -1,6 +1,7 @@
 @use "../base/colors.scss" as *;
 
 .mri{
+    margin-bottom: 70px;
     .title-default{
         margin-top: 60px;
         margin-bottom: 60px;
@@ -9,12 +10,47 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 30px;
+        column-gap: 35px;
     }
     &-image-info{
+        position: relative;
         img{
             width: 360px;
             border-radius: 10px;
+        }
+        .plus{
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border-radius: 50px;
+            background-color: orange;
+            color: $grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            z-index: 5;
+            cursor: pointer;
+            &:nth-child(2){
+                top: 80px;
+                left: 150px;
+            }
+            &:nth-child(3){
+                top: 115px;
+                left: 190px;
+            }
+            &:nth-child(4){
+                top: 150px;
+                left: 220px;
+            }
+            &:nth-child(5){
+                top: 170px;
+                left: 130px;
+            }
+            &:nth-child(6){
+                top: 220px;
+                left: 180px;
+            }            
         }
     }
     &-information{
