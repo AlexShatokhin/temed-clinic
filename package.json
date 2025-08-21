@@ -12,6 +12,8 @@
     "vite": "^7.1.2"
   },
   "dependencies": {
-    "sass": "^1.90.0"
+    "animate.css": "^4.1.1",
+    "sass": "^1.90.0",
+    "wowjs": "^1.1.3"
   }
 }

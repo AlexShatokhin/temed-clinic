@@ -1,0 +1,113 @@
+@use "../base/colors.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.video {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    &__wrapper{
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+    }
+
+    &__custom-player {
+        position: relative;
+        width: 270px;
+        height: 480px;
+        margin: 0 auto;
+        border-radius: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        
+        &.playing {
+            .video__preview {
+                opacity: 0;
+                pointer-events: none;
+            }
+            
+            .video__play-button {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    }
+    
+    &__preview {
+        position: relative;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: opacity 0.3s ease;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: background 0.3s ease;
+        }
+    }
+    
+    &__play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background: $orange;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 10;
+        
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        &::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 10px solid $white;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            margin-left: 2px;
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    // Адаптивность
+    @media (max-width: 768px) {
+        &__wrapper,
+        &__custom-player {
+            margin: 0 20px;
+        }
+        
+        &__preview {
+            height: 250px;
+        }
+        
+        &__play-button {
+            width: 60px;
+            height: 60px;
+            
+            &::before {
+                border-left: 18px solid $blue;
+                border-top: 12px solid transparent;
+                border-bottom: 12px solid transparent;
+                margin-left: 4px;
+            }
+        }
+    }
+}

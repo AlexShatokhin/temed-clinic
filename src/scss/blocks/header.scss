@@ -4,6 +4,7 @@
 .header{
     padding-top: 140px;
     padding-bottom: 30px;
+    overflow: hidden;
     &-wrapper{
         display: flex;
         justify-content: space-between;
@@ -32,13 +33,18 @@
     &-image{
         position: relative;
         margin-bottom: -4px;
+        img{
+            transform: translateY(200%);
+            animation: slideInUp1 2s ease forwards;
+        }
         &__wrapper{
             position: absolute;
             display: flex;
             column-gap: 30px;
             bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 15%;
+            transform: translateY(500%);
+            animation: slideInUp1 2s 1.3s ease forwards;
             &-item{
                 width: 240px;
                 height: 60px;
@@ -79,5 +85,14 @@
                 color: $grey;
             }
         }
+    }
+}
+
+@keyframes slideInUp1 {
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(0);
     }
 }

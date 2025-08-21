@@ -2,6 +2,7 @@
 @use "../base/mixins.scss" as *;
 
 .rating {
+    overflow: hidden;
     &__places {
         display: flex;
         justify-content: center;
@@ -18,6 +19,21 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            &:nth-child(1){
+                transform: translateX(-400px);
+                animation: slideInLeft1 1.1s ease forwards;
+                z-index: 3;
+            }
+            &:nth-child(2){
+                transform: translateX(-680px);
+                animation: slideInLeft2 1.2s ease forwards;
+                z-index: 2;
+            }
+            &:nth-child(3){
+                transform: translateX(-960px);
+                animation: slideInLeft3 1.1s ease forwards;
+                z-index: 1;
+            }
             img{
                 width: 35px;
                 border: 1px solid $white;
@@ -68,6 +84,32 @@
             padding: 20px 20px 0 20px;
             @include gradient-background;
         }
+    }
+}
+
+@keyframes slideInLeft1 {
+    from {
+        transform: translateX(-400px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft2 {
+    from {
+        transform: translateX(-680px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInLeft3 {
+    from {
+        transform: translateX(-960px);
+    }
+    to {
+        transform: translateX(0);
     }
 }
 
