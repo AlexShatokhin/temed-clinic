@@ -33,17 +33,22 @@
     &-list{
         display: flex;
         column-gap: 40px;
-        justify-content: center;
         margin-top: 50px;
         &__item{
             width: 260px;
             height: 420px;
+            color: $grey;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
             &-name{
                 display: block;
-                font-size: 25px;
+                font-size: 20px;
+                line-height: 25px;
                 margin-top: 20px;
+                padding: 0 10px;
             }
-            &-position {
+            &-positions {
                 margin-top: 20px;
             }
         }

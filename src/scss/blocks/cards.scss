@@ -19,7 +19,7 @@
 		background-color: rgb(255, 225, 0);
 		border-radius: 100px;
 		position: absolute;
-		top: 50px;
+		top: 40px;
 		left: 50%;
 		transform: translateX(-50%);
 		border: 2px solid $white;
@@ -27,7 +27,7 @@
 	&__text_second {
 		background-color: #fafafa;
 		height: 320px;
-		padding-top: 80px;
+		padding-top: 75px;
 		text-align: center;
 	}
 }

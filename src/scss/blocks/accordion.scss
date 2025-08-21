@@ -25,9 +25,12 @@
             font-weight: 300;
             color: $grey;
             border-radius: 100px;
-            transition: transform 0.3s ease;
+            transition: all 0.4s ease;
             cursor: pointer;
             @include gradient-background;
+            &:hover{
+                background: #eeeeee;
+            }
         }
         .question{
             font-weight: 500;
@@ -43,13 +46,13 @@
             line-height: 32px;
             font-weight: 300;
             height: 0;
-            transition: .3s all;
+            transition: .5s all;
             strong {
                 font-weight: 700;
             }
         }
     }
     .arrow-open{
-        transform: rotate(180deg);
+        transform: rotate(-90deg);
     }
 }

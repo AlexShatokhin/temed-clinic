@@ -3,34 +3,53 @@
 
 .menu{
     width: 100%;
-    padding: 20px 30px;
-    transition: .3s all;
+    padding: 20px 30px 0 30px;
+    transition: 1s all;
     position: fixed;
     z-index: 10;    
+    &_background {
+        background-color: #fafafa;
+    }
     &__wrapper{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 20px;   
     }
+    &__logo_wrapper{
+        width: 300px;
+    }
     &__list{
         list-style-type: none;
         display: flex;
-        column-gap: 20px;
-        a {
-            text-decoration: none;
-            color: $black;
+        column-gap: 25px;
+        &-item{
+            a {
+                text-decoration: none;
+                color: $black;
+                font-weight: 500;
+            }
+            &_active{
+                a{
+                    font-weight: 700;
+                    color: #107496;
+                    transition: 0.7s all;
+
+                }
+            }
         }
     }
     &__contacts{
         display: flex;
         justify-content: center;
-        column-gap: 20px;
+        align-items: center;
+        column-gap: 30px;
+        width: 300px;
         a {
             text-decoration: none;
             color: $blue;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 700;
         }
     }
     &-wrapper{
