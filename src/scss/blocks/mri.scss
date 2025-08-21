@@ -1,0 +1,36 @@
+@use "../base/colors.scss" as *;
+
+.mri{
+    .title-default{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &-image-info{
+        img{
+            width: 360px;
+            border-radius: 10px;
+        }
+    }
+    &-information{
+        &__title{
+            font-weight: 500;
+            color: $grey;
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 15px;
+        }
+        &__description{
+            font-weight: 500;
+            color: $blue;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }   
+    }
+}

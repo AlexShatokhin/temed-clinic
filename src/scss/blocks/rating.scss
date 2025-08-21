@@ -1,0 +1,73 @@
+@use "../base/colors.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.rating {
+    &__places {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        &-item{
+            width: 240px;
+            height: 60px;
+            padding: 10px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 35px;
+                border: 1px solid $white;
+                border-radius: 50px;
+                background-color: $white;
+                box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+            }
+            #gis{
+                border: none;
+                background-color: none;
+                box-shadow: none;
+            }            
+            &_description{
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+                font-weight: 500;
+                color: #252632;
+                svg {
+                    width: 60px;
+                }
+            }
+            &_mark{
+                font-size: 30px;
+                color: $black;
+                font-weight: 500;
+            }
+        }
+    }
+    .wrapper{
+        display: flex;
+        column-gap: 10px;
+    }
+    .advantages{
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            width: 260px;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+            color: $grey;
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 500;
+            text-align: center;
+            padding: 20px 20px 0 20px;
+            @include gradient-background;
+        }
+    }
+}
+

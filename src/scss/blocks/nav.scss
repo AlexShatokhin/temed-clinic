@@ -1,0 +1,49 @@
+@use '../base/colors.scss' as *;
+@use '../base/mixins.scss' as *;
+
+.menu{
+    width: 100%;
+    padding: 20px 30px;
+    transition: .3s all;
+    position: fixed;
+    z-index: 10;    
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;   
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        column-gap: 20px;
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+    }
+    &__contacts{
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        a {
+            text-decoration: none;
+            color: $blue;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+hr {
+    border: none;
+    border-top: 2px solid $grey; 
+}

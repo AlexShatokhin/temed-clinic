@@ -1,0 +1,12 @@
+.companies{
+    margin-bottom: 50px;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+    }
+    &__item{
+        width: 160px;
+    }
+}

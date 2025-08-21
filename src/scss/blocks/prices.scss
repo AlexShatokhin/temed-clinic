@@ -1,0 +1,56 @@
+@use "../base/colors.scss" as *;
+
+.prices {
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item{
+        width: 560px;
+        height: 420px;
+        background-color: #fafafa;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &__image{
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        &__title{
+            font-size: 30px;
+            line-height: 38px;
+            font-weight: 500;
+            color: $grey;
+            text-align: center;
+        }
+        &__subtitle{
+            color: $grey;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        &__price{
+            font-weight: 700;
+            color: $blue;
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 15px;
+        }
+        &__services{
+            list-style-type: none;
+            text-align: center;
+            margin-bottom: 20px;
+            &-item{
+                color: $grey;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        &_main{
+            border: 2px solid rgba($color: $blue, $alpha: 0.1);
+        }
+    }
+}

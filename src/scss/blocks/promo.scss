@@ -1,0 +1,52 @@
+@use "../base/colors.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.promo{
+    height: 360px;
+    @include gradient-background;
+    &__wrapper{
+        display: flex;
+        column-gap: 30px;
+        height: 360px;
+        align-items: flex-end;
+        padding-top: 60px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        height: 100%;
+        &_reception{
+            row-gap: 40px;
+        }
+    }
+    &-title{
+        font-size: 54px;
+        line-height: 57px;
+        color: $blue;
+        font-weight: 700;
+        &_reception{
+            font-size: 64px;
+            line-height: 67px;
+        }
+    }
+    &-subtitle{
+        font-size: 19px;
+        line-height: 21px;
+        font-weight: 700;
+        color: $blue;
+    }
+    &-contacts{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        a {
+            color: $blue;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 500;
+        }
+    }
+}
+

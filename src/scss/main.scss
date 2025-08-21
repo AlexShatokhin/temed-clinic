@@ -1,4 +1,15 @@
 @use "/src/scss/base/normalize.scss";
+@use "/src/scss/base/mixins.scss" as *;
+@use "/src/scss/blocks/nav.scss";
+@use "/src/scss/blocks/header.scss";
+@use "/src/scss/blocks/rating.scss";
+@use "/src/scss/blocks/help.scss";
+@use "/src/scss/blocks/companies.scss";
+@use "/src/scss/blocks/promo.scss";
+@use "/src/scss/blocks/prices.scss";
+@use "/src/scss/blocks/benefits.scss";
+@use "/src/scss/blocks/mri.scss";
+
 @use "/src/scss/blocks/doctors.scss";
 @use "/src/scss/blocks/cards.scss";
 @use "/src/scss/blocks/footer.scss";
@@ -13,4 +24,9 @@
 .container {
     width: 1160px;
     margin: 0 auto;
+}
+
+.main{
+    position: relative;
+    @include gradient-background;
 }
