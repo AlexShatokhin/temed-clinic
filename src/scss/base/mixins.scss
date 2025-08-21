@@ -8,6 +8,18 @@
     border: none;
     border-radius: 10px;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.button-invert{
+    width: 280px;
+    height: 60px;
+    background-color: #e7eefd;
+    color: $blue;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 @mixin gradient-background {
@@ -20,6 +32,6 @@
     font-weight: 700;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: $blue;
 }
