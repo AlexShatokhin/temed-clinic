@@ -113,3 +113,38 @@
         opacity: 1;
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &-text{
+            &__title{
+                font-size: 40px;
+                line-height: 44px;
+            }
+            &__description{
+                font-size: 15px;
+                line-height: 23px;
+            }
+        }
+        &-image{
+            .doctors{
+                width: 575px;
+            }
+            &__wrapper{
+                left: 8%;
+            }
+        }
+        &-button{
+            margin-top: 70px;
+        }
+        .advantages{
+            column-gap: 70px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .header{}
+}
