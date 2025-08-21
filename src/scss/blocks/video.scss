@@ -2,9 +2,7 @@
 @use "../base/mixins.scss" as *;
 
 .video {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-    &__wrapper{
+    &__wrapper{ 
         display: flex;
         column-gap: 20px;
         justify-content: center;
