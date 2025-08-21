@@ -1,0 +1,55 @@
+@use "../base/colors.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.accordion-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    &__item{
+        color: $grey;
+        background-color: #fafafa;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        .arrow{
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 30px;
+            top: 12px;
+            font-size: 35px;
+            font-weight: 300;
+            color: $grey;
+            border-radius: 100px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            @include gradient-background;
+        }
+        .question{
+            font-weight: 500;
+            font-size: 20px;
+            padding: 25px 30px;
+            cursor: pointer;
+        }
+        .answer{
+            font-size: 24px;
+            font-weight: 400;
+            padding: 0 30px;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 300;
+            height: 0;
+            transition: .3s all;
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+    .arrow-open{
+        transform: rotate(180deg);
+    }
+}
