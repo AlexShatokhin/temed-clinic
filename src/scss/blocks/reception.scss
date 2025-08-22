@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     &-item{
         width: 260px;
@@ -17,6 +17,8 @@
             position: relative;
         }
         &__photo{
+            width: 100%;
+            object-fit: cover;
             height: 160px;
         }
         &__period {
@@ -54,5 +56,52 @@
     }
     .rotate-270{
         transform: rotate(270deg);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .reception{
+        &-item{
+            width: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+    .reception{
+        &__wrapper{
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &-item{
+            &__text{
+                padding: 18px;
+            }
+            &__photo{
+                height: 90px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .reception{
+        &-item{
+            width: 210px;
+            height: 310px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .reception{
+        &-item{
+            width: 340px;
+            height: 320px;
+            &__photo{
+                height: 140px;
+            }
+        }
     }
 }
