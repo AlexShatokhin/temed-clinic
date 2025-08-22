@@ -96,26 +96,15 @@
                 width: 300px;
             }
             .plus-data{
-                &:nth-child(2){
+                &:nth-child(5){
                     top: 70px;
                     left: 120px;
                 }
-                &:nth-child(3){
-                    top: 50px;
-                    left: 160px;
-                }
-                &:nth-child(4){
-                    top: 130px;
-                    left: 180px;
-                }
-                &:nth-child(5){
+                &:nth-child(2){
                     top: 140px;
                     left: 115px;
                 }
-                &:nth-child(6){
-                    top: 180px;
-                    left: 140px;
-                }                   
+                  
             }
         }
     }
@@ -129,6 +118,11 @@
             justify-content: center;
             text-align: center;
             row-gap: 20px;
+        }
+        &-image-info{
+            .plus-data{
+
+            }
         }
         &-information{
             &__title{
