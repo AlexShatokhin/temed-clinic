@@ -19,7 +19,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            right: 30px;
+            right: 10px;
             top: 12px;
             font-size: 35px;
             font-weight: 300;
@@ -35,7 +35,7 @@
         .question{
             font-weight: 500;
             font-size: 20px;
-            padding: 25px 30px;
+            padding: 25px 50px 25px 30px;
             cursor: pointer;
         }
         .answer{
@@ -54,5 +54,24 @@
     }
     .arrow-open{
         transform: rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .accordion-list {
+        &__item {
+            .arrow{
+                &:hover{
+                    @include gradient-background;
+                }
+            }
+            .question {
+                font-size: 16px;
+            }
+            .answer {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
     }
 }
