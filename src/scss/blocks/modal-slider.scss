@@ -74,6 +74,10 @@
             width: 860px;
             height: 560px;
         }
+        iframe {
+            width: 860px;
+            height: 560px;
+        }
     }
     .swiper-button-next,
     .swiper-button-prev {
@@ -137,6 +141,10 @@
                 width: 700px;
                 height: 455px;
             }
+            iframe {
+                width: 700px;
+                height: 455px;
+            }
         }
         .swiper-button-next {
             right: 0px;
@@ -157,6 +165,10 @@
     .video-swiper {
         .slide-content{
             &__video{
+                width: 640px;
+                height: 416px;
+            }
+            iframe {
                 width: 640px;
                 height: 416px;
             }
@@ -190,6 +202,10 @@
                 width: 480px;
                 height: 313px;
             }
+            iframe {
+                width: 480px;
+                height: 313px;
+            }
         }      
         .swiper-button-next {
             right: 35vw;
@@ -208,6 +224,10 @@
     .video-swiper {
         .slide-content{
             &__video{
+                width: 360px;
+                height: 240px;
+            }
+            iframe {
                 width: 360px;
                 height: 240px;
             }
