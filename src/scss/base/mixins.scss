@@ -37,3 +37,13 @@
     margin-bottom: 50px;
     color: $blue;
 }
+
+
+@media screen and (max-width: 640px) {
+    .title-default {
+        font-size: 25px;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+}

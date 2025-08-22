@@ -40,3 +40,62 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+    .help{
+        &-list{
+            &__item{
+                width: 300px;
+                &-title{
+                    column-gap: 9px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .help{
+        &-list{
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            row-gap: 15px;
+            &__item{
+                width: 218px;
+                height: 170px;
+                padding: 15px 10px;
+                &-title{
+                    column-gap: 9px;
+                    .title{
+                        font-size: 17px;
+                        line-height: 20px;
+                    }
+                    img {
+                        width: 40px;
+                    }
+                }
+                &-description{
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .help{
+        &-list{
+            &__item{
+                width: 340px;
+                height: 130px;
+            }
+        }
+        .subtitle-default{
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+}
