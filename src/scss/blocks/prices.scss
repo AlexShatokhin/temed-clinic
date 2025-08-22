@@ -54,3 +54,51 @@
         }
     }
 }
+
+@media screen and (max-width: 960px) {
+    .prices{
+        &__wrapper{
+            flex-direction: column;
+            row-gap: 30px;
+            align-items: center;
+        }
+        &-item{
+            width: 460px;
+            height: 320px;
+            &__image{
+                width: 40px;
+                margin-bottom: 5px;
+            }
+            &__title{
+                font-size: 20px;
+                line-height: 25px;
+            }
+            &__subtitle{
+                font-size: 10px;
+                line-height: 15px;
+            }
+            &__price{
+                font-size: 20px;
+                line-height: 25px;
+            }
+            &__services{
+                &-item{
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .prices{
+        &__wrapper{
+            row-gap: 20px;
+        }
+        &-item{
+            width: 340px;
+            height: 320px;
+        }
+    }
+}

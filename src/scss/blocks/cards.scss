@@ -31,3 +31,25 @@
 		text-align: center;
 	}
 }
+
+@media screen and (max-width: 960px) {
+	.splitted-card{
+		&__text_second{
+			padding-top: 65px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.splitted-card{
+		&__text_first{
+			height: 80px;
+		}
+		&__image{
+			top: 20px;
+		}
+		&__text_second{
+			padding-top: 60px;
+		}
+	}
+}
