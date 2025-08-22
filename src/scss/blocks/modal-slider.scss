@@ -1,0 +1,226 @@
+@use "../base/colors.scss" as *;
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &.active {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    position: relative;
+    width: 860px;
+    height: 560px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 0 20px;
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+
+    .modal-overlay.active & {
+        transform: scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: $black;
+    cursor: pointer;
+    z-index: 10001;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+
+.swiper{
+    overflow: visible;
+}
+
+.video-swiper {
+    width: 100%;
+    height: 500px;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide-content {
+        text-align: center;
+        width: 100%;
+        &__video{
+            width: 860px;
+            height: 560px;
+        }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $blue;
+        background: $white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+
+        &:after {
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        &:hover {
+            background: #fafafa;
+        }
+    }
+
+    .swiper-button-next {
+        right: -120px;
+        top: 50%;
+    }
+
+    .swiper-button-prev {
+        left: -120px;
+        top: 50%;
+    }
+
+    .swiper-pagination {
+        bottom: -100px;
+
+        .swiper-pagination-bullet {
+            background: $black;
+            opacity: 1;
+            width: 8px;
+            height: 8px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+            &:hover{
+                background: $orange;
+                opacity: 0.9;
+            }
+
+            &.swiper-pagination-bullet-active {
+                background: $orange;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .video-swiper {
+        .slide-content{
+            &__video{
+                width: 700px;
+                height: 455px;
+            }
+        }
+        .swiper-button-next {
+            right: 0px;
+        }
+
+        .swiper-button-prev {
+            left: 0px;
+        }        
+        .swiper-pagination {
+            bottom: -20px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .video-swiper {
+        .slide-content{
+            &__video{
+                width: 640px;
+                height: 416px;
+            }
+        }
+        .swiper-button-next {
+            right: 5vw;
+        }
+
+        .swiper-button-prev {
+            left: 5vw;
+        }        
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .video-swiper {
+        .swiper-button-next {
+            right: 15vw;
+        }
+
+        .swiper-button-prev {
+            left: 15vw;
+        }        
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .video-swiper {
+        .slide-content{
+            &__video{
+                width: 480px;
+                height: 313px;
+            }
+        }      
+        .swiper-button-next {
+            right: 35vw;
+        }
+
+        .swiper-button-prev {
+            left: 35vw;
+        }          
+        .swiper-pagination {
+            bottom: 50px;
+        }        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-swiper {
+        .slide-content{
+            &__video{
+                width: 360px;
+                height: 240px;
+            }
+        }      
+        .swiper-button-next {
+            right: 65vw;
+        }
+
+        .swiper-button-prev {
+            left: 65vw;
+        } 
+        .swiper-pagination {
+            bottom: 70px;
+        }                     
+    }
+}

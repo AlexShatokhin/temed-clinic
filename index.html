@@ -7,6 +7,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<title>Vite App</title>
 	</head>
 	<body>
@@ -825,7 +827,7 @@
 						<img src="/src/assets/images/doctors/doctor_2.webp" alt="" class="splitted-card__image steps__item-image">
 						<div class="splitted-card__text_second">
 							<span class="steps__item-name">Рекомендации от Романа Алексеевича, опытного реабилитолога Клиники TEMED</span>
-							<button class="button-invert wow animate__animated animate__heartBeat" data-wow-duration="3s" data-wow-delay="100ms">Смотреть видео</button>
+							<button class="button-invert steps__item__button wow animate__animated animate__heartBeat" data-wow-duration="3s" data-wow-delay="100ms">Смотреть видео</button>
 						</div>
 					</div>					
 				</div>
@@ -928,10 +930,65 @@
 			</div>
 		</footer>
 
+		<div class="modal-overlay" id="videoModal">
+			<button class="modal-close" id="modalClose">
+				<svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+			</button>
+			<div class="modal-content">
+				<div class="swiper video-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide-content">
+								<div data-video-custom 
+									data-class-name="slide-content__video"
+									data-video-url="https://play.boomstream.com/339fewNy?autostart=1"
+									data-preview-image="/src/assets/images/excercises/ex_1.webp">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-content">
+								<div data-video-custom 
+									data-class-name="slide-content__video"
+									data-video-url="https://play.boomstream.com/339fewNy?autostart=1"
+									data-preview-image="/src/assets/images/excercises/ex_2.webp">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-content">
+								<div data-video-custom
+									data-class-name="slide-content__video"
+									data-video-url="https://play.boomstream.com/339fewNy?autostart=1"
+									data-preview-image="/src/assets/images/excercises/ex_3.webp">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-content">
+								<div data-video-custom 
+									data-class-name="slide-content__video"
+									data-video-url="https://play.boomstream.com/339fewNy?autostart=1"
+									data-preview-image="/src/assets/images/excercises/ex_4.webp">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Navigation buttons -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<!-- Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
             new WOW().init();
         </script>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script type="module" src="/src/main.js"></script>
 	</body>
 </html>

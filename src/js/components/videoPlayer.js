@@ -25,9 +25,9 @@ export function initVideoPlayer() {
 
 
     // Инициализация кастомного видео плеера с превью
-    function initCustomPlayer(container, videoUrl, previewImage) {
+    function initCustomPlayer(container, videoUrl, previewImage, className = '') {
         const playerHTML = `
-            <div class="video__custom-player" data-video-url="${videoUrl}">
+            <div class="video__custom-player ${className}" data-video-url="${videoUrl}">
                 <div class="video__preview" style="background-image: url('${previewImage}')">
                     <div class="video__play-button"></div>
                 </div>
@@ -64,9 +64,10 @@ export function initVideoPlayer() {
         document.querySelectorAll('[data-video-custom]').forEach(element => {
             const videoUrl = element.dataset.videoUrl;
             const previewImage = element.dataset.previewImage;
+            const className = element.dataset.className || '';
             
             if (videoUrl && previewImage) {
-                initCustomPlayer(element, videoUrl, previewImage);
+                initCustomPlayer(element, videoUrl, previewImage, className);
             }
         });
         
