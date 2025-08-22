@@ -88,3 +88,58 @@
         }   
     }
 }
+
+@media screen and (max-width: 1200px){
+    .mri{
+        &-image-info{
+            img{
+                width: 300px;
+            }
+            .plus-data{
+                &:nth-child(2){
+                    top: 70px;
+                    left: 120px;
+                }
+                &:nth-child(3){
+                    top: 50px;
+                    left: 160px;
+                }
+                &:nth-child(4){
+                    top: 130px;
+                    left: 180px;
+                }
+                &:nth-child(5){
+                    top: 140px;
+                    left: 115px;
+                }
+                &:nth-child(6){
+                    top: 180px;
+                    left: 140px;
+                }                   
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .mri{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            row-gap: 20px;
+        }
+        &-information{
+            &__title{
+                font-size: 25px;
+                line-height: 31px;
+            }
+            &__description{
+                width: 320px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
