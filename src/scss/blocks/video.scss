@@ -10,6 +10,10 @@
         overflow-x: scroll;
     }
 
+    &__empty {
+        width: 270px;
+        height: 480px;
+    }
     &__custom-player {
         position: relative;
         width: 270px;
@@ -94,6 +98,10 @@
     .video {
         margin-bottom: 60px;
         &__custom-player {
+            width: 196px;
+            height: 350px;
+        }
+        &__empty {
             width: 196px;
             height: 350px;
         }

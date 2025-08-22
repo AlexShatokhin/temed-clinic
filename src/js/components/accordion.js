@@ -42,10 +42,21 @@ function toggleAccordion(element, closeOthers = false) {
 export function initAccordion(multi = true) {
   	const accordionItems = document.querySelectorAll('.accordion-list__item');
 
-  	accordionItems.forEach(item => {
+  	accordionItems.forEach((item, index) => {
 		const question = item.querySelector('.question');
 		const arrow = item.querySelector('.arrow');
+		const content = item.querySelector('.answer');
 		const shouldCloseOthers = !multi;
+		
+		// Открываем первый элемент при загрузке
+		if (index === 0) {
+			content.classList.add('open');
+			arrow.classList.add('arrow-open');
+			// Устанавливаем высоту после того как элемент добавлен в DOM
+			setTimeout(() => {
+				content.style.height = content.scrollHeight + 30 + 'px';
+			}, 10);
+		}
 		
 		question.addEventListener('click', () => toggleAccordion(item, shouldCloseOthers));
 		arrow.addEventListener('click', () => toggleAccordion(item, shouldCloseOthers));
