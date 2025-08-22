@@ -12,10 +12,18 @@
     &-item{
         font-size: 16px;
         color: $blue;
-        font-weight: 500;
+        font-weight: 400;
         border-radius: 10px;
         background-color: #fafafa;
         padding: 14px 20px;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .symptoms{
+        &-item{
+            font-size: 15px;
+        }
     }
 }

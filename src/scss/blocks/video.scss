@@ -7,6 +7,7 @@
         column-gap: 20px;
         justify-content: center;
         margin-top: 60px;
+        overflow-x: scroll;
     }
 
     &__custom-player {
@@ -86,27 +87,15 @@
         height: 100%;
     }
     
-    // Адаптивность
-    @media (max-width: 768px) {
-        &__wrapper,
+}
+
+
+@media screen and (max-width: 640px) {
+    .video {
+        margin-bottom: 60px;
         &__custom-player {
-            margin: 0 20px;
-        }
-        
-        &__preview {
-            height: 250px;
-        }
-        
-        &__play-button {
-            width: 60px;
-            height: 60px;
-            
-            &::before {
-                border-left: 18px solid $blue;
-                border-top: 12px solid transparent;
-                border-bottom: 12px solid transparent;
-                margin-left: 4px;
-            }
+            width: 196px;
+            height: 350px;
         }
     }
 }

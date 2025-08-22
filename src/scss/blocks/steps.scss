@@ -40,3 +40,44 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.steps{
+		&__wrapper{
+			justify-content: center;
+			column-gap: 20px;
+		}
+		&__item{
+			width: 400px;
+			&-title{
+				font-size: 20px;
+				line-height: 25px;
+			}
+			&-name{
+				width: 100%;
+				padding: 0 15px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.steps{
+		&__wrapper{
+			row-gap: 20px;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.steps{
+		&__item{
+			width: 340px;
+		}
+	}
+}

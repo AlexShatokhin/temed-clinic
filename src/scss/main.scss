@@ -36,8 +36,22 @@
     @include gradient-background;
 }
 
+
+
 @media screen and (max-width: 1200px) {
     .container {
         width: 940px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 95%;
     }
 }
