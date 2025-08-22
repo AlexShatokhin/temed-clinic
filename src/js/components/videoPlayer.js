@@ -108,8 +108,7 @@ export function initVideoPlayer() {
             }
         });
         
-        // Инициализация перетаскивания видео блоков
-        initVideoDragging();
+
     }
     
     return {

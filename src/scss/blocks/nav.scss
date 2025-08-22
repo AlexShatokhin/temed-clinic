@@ -97,7 +97,7 @@ hr {
         }
         &_mobile{
             display: block;
-            background-color: #fafafa;
+            background-color: $white;
             padding: 0;
             hr{
                 margin: 0;
@@ -128,7 +128,7 @@ hr {
             height: 60px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: end;
             span{
                 display: block;
@@ -136,10 +136,10 @@ hr {
                 height: 5px;
                 background: $grey;
                 &:not(:last-child){
-                    margin-bottom: 10px;
+                    margin-bottom: 11px;
                 }
                 &:last-child{
-                    width: 60%;
+                    width: 65%;
                 }
             }
         }
@@ -150,19 +150,26 @@ hr {
         right: 0;
         bottom: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0);
         z-index: 100;
-        display: none;
+        pointer-events: none;
         &.active{
-            display: block;
+            background: rgba(0, 0, 0, 0.6); 
+            opacity: 1;
+            pointer-events: all;
         }
         &__wrapper{
             position: absolute;
             right: 0;
             background: $white;
             width: 300px;
+            transform: translateX(100%);
             padding: 48px 40px 38px;
             height: 100vh;
+            transition: .3s all;
+            &.active{
+                transform: translateX(0);
+            }
         }
         .close-btn{
             position: absolute;
@@ -213,6 +220,56 @@ hr {
                     font-size: 16px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .menu{
+        &__wrapper {
+            width: 650px;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+        &__phone{
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &__content{
+            column-gap: 25px;
+        }
+        .burger {
+            width: 47px;
+            height: 40px;
+            span {
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .menu{
+        &__wrapper {
+            width: 440px;
+            margin: 0 auto;
+            padding: 0;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .menu{
+        &__wrapper {
+            width: 340px;
         }
     }
 }
