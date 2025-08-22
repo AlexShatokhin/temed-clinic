@@ -16,6 +16,7 @@
         flex-direction: column;
         row-gap: 20px;
         height: 100%;
+        margin-bottom: 40px;
         &_reception{
             row-gap: 40px;
         }
@@ -83,6 +84,10 @@
 @media screen and (max-width: 640px) {
     .promo{
         text-align: center;
+        min-height: 280px;
+        &__wrapper{
+            min-height: 280px;
+        }
         &-title{
             font-size: 40px;
             line-height: 45px;
@@ -112,8 +117,20 @@
         align-items: center;
         text-align: center;
         min-height: 120px;
+        &__content{
+            margin-bottom: 0;
+            &_footer{
+                row-gap: 30px;
+            }
+        }
+        &-footer{
+            font-size: 25px;
+            line-height: 28px;
+            text-align: center;
+        }
         &__wrapper{
             align-items: center;
+            justify-content: center;
             min-height: 120px;
             padding: 30px 20px;
         }
