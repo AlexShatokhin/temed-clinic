@@ -90,6 +90,10 @@
         &-item{
             width: 210px;
             height: 310px;
+            &__description{
+                font-size: 13px;
+                line-height: 17px;
+            }
         }
     }
 }

@@ -26,7 +26,6 @@
             background-color: $orange;
             color: $grey;
             font-size: 18px;
-            z-index: 5;
             &:nth-child(2){
                 top: 80px;
                 left: 150px;
@@ -51,6 +50,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                z-index: 5;
+
             }         
             &__information{
                 position: absolute;
@@ -68,6 +69,7 @@
                 font-size: 16px;
                 font-weight: 300;
                 transform: translateX(-50%);
+                z-index: 6;
             }
         }
     }
@@ -102,9 +104,20 @@
                 }
                 &:nth-child(2){
                     top: 140px;
-                    left: 115px;
+                    left: 100px;
                 }
-                  
+                &:nth-child(3){
+                    top: 50px;
+                    left: 160px;
+                }
+                &:nth-child(4){
+                    top: 120px;
+                    left: 180px;
+                }
+                &:nth-child(6){
+                    top: 180px;
+                    left: 150px;
+                }                     
             }
         }
     }
