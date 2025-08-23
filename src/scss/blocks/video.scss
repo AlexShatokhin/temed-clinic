@@ -2,27 +2,107 @@
 @use "../base/mixins.scss" as *;
 
 .video {
-    &__wrapper{ 
+    padding: 70px 0 85px 0;
+    background: #F1F5F8;
+
+    @media (max-width: 1024px) {
+        padding: 60px 0 75px 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 50px 0 60px 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 40px 0 50px 0;
+    }
+
+    .title-default {
+        margin-bottom: 40px;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 480px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__wrapper { 
         display: flex;
         column-gap: 20px;
-        justify-content: center;
         margin-top: 60px;
-        overflow-x: scroll;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 20px;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        user-select: none;
+        
+        // Скрываем скроллбар
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        // Плавная прокрутка
+        scroll-snap-type: x mandatory;
+
+        @media (max-width: 1024px) {
+            column-gap: 15px;
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            column-gap: 12px;
+            padding: 12px;
+        }
+
+        @media (max-width: 480px) {
+            column-gap: 10px;
+            padding: 10px;
+        }
     }
 
     &__empty {
+        min-width: 270px;
         width: 270px;
         height: 480px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+
+        @media (max-width: 640px) {
+            min-width: 196px;
+            width: 196px;
+            height: 350px;
+        }
     }
+
     &__custom-player {
         position: relative;
+        min-width: 270px;
         width: 270px;
         height: 480px;
-        margin: 0 auto;
         border-radius: 15px;
         overflow: hidden;
         cursor: pointer;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        
+        @media (max-width: 640px) {
+            min-width: 196px;
+            width: 196px;
+            height: 350px;
+        }
         
         &.playing {
             .video__preview {
@@ -44,6 +124,7 @@
         background-position: center;
         background-repeat: no-repeat;
         transition: opacity 0.3s ease;
+        
         &::before {
             content: '';
             position: absolute;
@@ -89,21 +170,5 @@
     iframe {
         width: 100%;
         height: 100%;
-    }
-    
-}
-
-
-@media screen and (max-width: 640px) {
-    .video {
-        margin-bottom: 60px;
-        &__custom-player {
-            width: 196px;
-            height: 350px;
-        }
-        &__empty {
-            width: 196px;
-            height: 350px;
-        }
     }
 }

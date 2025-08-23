@@ -7,6 +7,7 @@ import { initPlusData } from "./js/components/plusData.js";
 import { initVideoPlayer } from "./js/components/videoPlayer.js";
 import initBurgerMenu from './js/components/burgerMenu.js';
 import { initModalSlider } from './js/components/modalSlider.js';
+import { initVideoCarousel } from './js/components/videoCarousel.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initAccordion(false);
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPlusData();
     initBurgerMenu();
     initModalSlider();
+    initVideoCarousel();
     
     const videoPlayer = initVideoPlayer();
     videoPlayer.autoInit();
