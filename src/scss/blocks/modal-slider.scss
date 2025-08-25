@@ -59,7 +59,6 @@
 
 .video-swiper {
     width: 100%;
-    height: 500px;
 
     .swiper-slide {
         display: flex;
@@ -110,7 +109,7 @@
     }
 
     .swiper-pagination {
-        bottom: -100px;
+        bottom: -50px;
 
         .swiper-pagination-bullet {
             background: $black;
@@ -135,6 +134,10 @@
 
 
 @media screen and (max-width: 1200px) {
+    .modal-content {
+        width: 700px;
+        height: 455px;
+    }
     .video-swiper {
         .slide-content{
             &__video{
@@ -154,7 +157,7 @@
             left: 0px;
         }        
         .swiper-pagination {
-            bottom: -20px;
+            bottom: -40px;
         }
     }
 }
@@ -162,15 +165,19 @@
 
 
 @media screen and (max-width: 960px) {
+    .modal-content {
+        width: 640px;
+        height: 416px;
+    }
     .video-swiper {
         .slide-content{
             &__video{
-                width: 640px;
-                height: 416px;
+                width: 610px;
+                height: 410px;
             }
             iframe {
                 width: 640px;
-                height: 416px;
+                height: 410px;
             }
         }
         .swiper-button-next {
@@ -183,23 +190,17 @@
     }
 }
 
-@media screen and (max-width: 760px) {
-    .video-swiper {
-        .swiper-button-next {
-            right: 15vw;
-        }
 
-        .swiper-button-prev {
-            left: 15vw;
-        }        
-    }
-}
 
 @media screen and (max-width: 640px) {
+    .modal-content {
+        width: 480px;
+        height: 313px;
+    }
     .video-swiper {
         .slide-content{
             &__video{
-                width: 480px;
+                width: 100%;
                 height: 313px;
             }
             iframe {
@@ -208,39 +209,40 @@
             }
         }      
         .swiper-button-next {
-            right: 35vw;
+            right: 10%;
         }
 
         .swiper-button-prev {
-            left: 35vw;
+            left: 10%;
         }          
         .swiper-pagination {
-            bottom: 50px;
+            bottom: -30px;
         }        
     }
 }
 
 @media screen and (max-width: 480px) {
+    .modal-content {
+        width: 360px;
+        height: 240px;
+    }
     .video-swiper {
         .slide-content{
             &__video{
-                width: 360px;
+                width: 100%;
                 height: 240px;
             }
             iframe {
-                width: 360px;
+                width: 100%;
                 height: 240px;
             }
         }      
         .swiper-button-next {
-            right: 65vw;
+            right: 5%;
         }
 
         .swiper-button-prev {
-            left: 65vw;
-        } 
-        .swiper-pagination {
-            bottom: 70px;
-        }                     
+            left: 5%;
+        }                           
     }
 }
