@@ -38,22 +38,6 @@ export function initVideoCarousel() {
         carousel.scrollLeft = scrollLeft - walk;
     });
 
-    // Touch события для мобильных устройств
-    let startTouchX;
-    let scrollTouchLeft;
-
-    carousel.addEventListener('touchstart', (e) => {
-        startTouchX = e.touches[0].pageX - carousel.offsetLeft;
-        scrollTouchLeft = carousel.scrollLeft;
-    });
-
-    carousel.addEventListener('touchmove', (e) => {
-        e.preventDefault();
-        
-        const x = e.touches[0].pageX - carousel.offsetLeft;
-        const walk = (x - startTouchX) * 2;
-        carousel.scrollLeft = scrollTouchLeft - walk;
-    });
 
     // Предотвращаем клик по видео при драге
     let isDragging = false;
